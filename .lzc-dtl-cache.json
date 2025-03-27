@@ -1,0 +1,28 @@
+{
+  "name": "YesPlayMusic",
+  "package": "xyz.mxue.yesplaymusic",
+  "description": "高颜值的第三方网易云播放器",
+  "homepage": "https://github.com/qier222/YesPlayMusic",
+  "author": "qier222",
+  "app_features": [],
+  "subdomain": "yesplaymusic",
+  "version": "0.0.1",
+  "iconPath": "lzc-app-icon.png",
+  "composePath": "docker-compose.yml",
+  "unsupported_platforms": [],
+  "lastRouteType": "from_compose",
+  "port_mappings": {
+    "yesplaymusic_3000_80": {
+      "use": true,
+      "type": "http",
+      "path": "/",
+      "targetPath": "/"
+    }
+  },
+  "image_fogforest_yesplaymusic_latest": {
+    "originalImage": "fogforest/yesplaymusic:latest",
+    "pushTarget": "lazycat",
+    "newImageName": "registry.lazycat.cloud/mxuexxmy/fogforest/yesplaymusic:323dd7736e5be2e4",
+    "timestamp": "2025-03-27T10:02:23.834Z"
+  }
+}

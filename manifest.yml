@@ -1,0 +1,19 @@
+lzc-sdk-version: "0.1"
+name: YesPlayMusic
+package: xyz.mxue.yesplaymusic
+version: 0.0.1
+description: 高颜值的第三方网易云播放器
+homepage: https://github.com/qier222/YesPlayMusic
+author: qier222
+application:
+  subdomain: yesplaymusic
+  background_task: false
+  multi_instance: false
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  routes:
+    - /=http://yesplaymusic.xyz.mxue.yesplaymusic.lzcapp:80/
+services:
+  yesplaymusic:
+    image: registry.lazycat.cloud/mxuexxmy/fogforest/yesplaymusic:323dd7736e5be2e4
